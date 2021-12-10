@@ -1,0 +1,274 @@
+.theme {
+    margin: 0;
+    color: #787878;
+    background: #1b2473;
+    font-family: "Roboto", fantasy;
+}
+
+@font-face {
+    font-family: "Roboto";
+    src: url("Roboto-Regular.ttf") format("truetype");
+}
+
+@media screen and (max-width: 768px) and (min-width: 320px) {
+    .theme {
+        padding: 20px;
+        font-weight: bold;
+    }
+
+    .window__field {
+        width: calc(100vw - 130px);
+    }
+
+    .window {
+        display: flex;
+        height: calc(100vh - 40px);
+        width: calc(100vw - 40px);
+        justify-content: center;
+        background-color: white;
+        align-items: flex-start;
+        flex-wrap: wrap;
+        flex: 1 1 100%;
+        box-shadow: 0 0 40px 10px rgba(0, 0, 0, 0.25);
+        border-radius: 20px;
+    }
+
+    .window__title {
+        text-align: center;
+        font-style: normal;
+        font-weight: bold;
+        font-size: 60px;
+        line-height: 50px;
+        margin-top: 38px;
+        margin-bottom: 13px;
+    }
+
+
+    .window__input {
+        font-size: 28px;
+        line-height: 36px;
+        border: 2px solid #787878;
+        box-sizing: border-box;
+        border-radius: 10px;
+        margin-bottom: 13px;
+        width: 100%;
+        font-style: normal;
+        font-weight: bold;
+    }
+
+    .window__field-mail {
+        font-size: 24px;
+        line-height: 16px;
+        margin-bottom: 8px;
+        font-style: normal;
+        font-weight: bold;
+        padding-left: 8px;
+    }
+
+    .window__field-password {
+        font-size: 24px;
+        line-height: 16px;
+        margin-bottom: 8px;
+        font-style: normal;
+        font-weight: bold;
+        padding-left: 8px
+    }
+
+    .window__input::placeholder {
+        color: #cccccc;
+        font-style: normal;
+        font-weight: bold;
+        font-size: 28px;
+        line-height: 36px;
+
+    }
+
+    .window__password::placeholder {
+        color: #cccccc;
+        font-style: normal;
+        font-weight: bold;
+        font-size: 28px;
+        line-height: 36px;
+    }
+
+    .window__checkbox {
+        width: fit-content;
+    }
+
+    .window__checkbox:checked + .window__button-checkbox {
+        background-color: #1A226B;
+    }
+
+    .window__checkbox-label {
+        position: relative;
+        top: -44px;
+        padding-left: 44px;
+        font-style: normal;
+        font-weight: normal;
+        font-size: 18px;
+        line-height: 16px;
+    }
+
+    .window__button-checkbox {
+        width: 32px;
+        height: 32px;
+        background: #FFFFFF;
+        border: 2px solid #787878;
+        box-sizing: border-box;
+        border-radius: 7px;
+        margin: 0;
+        position: relative;
+        top: -20px;
+
+    }
+
+    .window__button-fix{
+        margin-top: 72px;
+        border: 0;
+        display: flex;
+        justify-content: center;
+    }
+
+    .window__button {
+        width: 220px;
+        height: 80px;
+        background-color: #1A226B;
+        color: white;
+        border-radius: 10px;
+        font-style: normal;
+        font-weight: bold;
+        font-size: 32px;
+        line-height: 16px;
+    }
+
+}
+
+@media screen and (min-width: 769px) {
+
+    .window {
+        position: relative;
+        width: 600px;
+        height: 412px;
+        margin: 0 auto;
+        top: 82px;
+        border-radius: 20px;
+        background-color: #ffffff;
+        box-shadow: 0 0 40px 10px rgba(0, 0, 0, 0.25);
+    }
+
+    .window__title {
+        width: 115px;
+        height: 50px;
+        top: 26px;
+        left: 242px;
+        text-align: center;
+        position: relative;
+        font-style: normal;
+        font-weight: bold;
+        font-size: 50px;
+        line-height: 50px;
+    }
+
+    .window__form {
+        font-style: normal;
+        font-size: 28px;
+        line-height: 36px;
+
+    }
+
+    .window__input {
+        position: relative;
+        width: 505px;
+        height: 45px;
+        left: 45px;
+        top: 36px;
+        border: 2px solid #787878;
+        border-radius: 10px;
+        line-height: normal;
+        font-size: 28px;
+        font-weight: 600;
+        color: #787878;
+    }
+
+    .window__input::placeholder {
+        color: #cccccc;
+    }
+
+    .window__password::placeholder {
+        color: #cccccc;
+    }
+
+    .window__password {
+        margin-top: 32px;
+        margin-bottom: 48px;
+    }
+
+    .window__block {
+        position: absolute;
+        width: fit-content;
+        display: flex;
+        align-items: center;
+    }
+
+    .window__checkbox {
+        position: absolute;
+        left: 0;
+        top: 0;
+        opacity: 0;
+        width: 100%;
+        height: 100%;
+        margin: 0;
+    }
+
+    .window__checkbox:checked + .window__button-checkbox {
+        background-color: #1A226B;
+    }
+
+    .window__checkbox-label {
+        font-size: 14px;
+        margin-left: 10px;
+    }
+
+    .window__button-checkbox {
+        width: 22px;
+        height: 22px;
+        border-radius: 7px;
+        border: 2px #787878 solid;
+        margin-left: 45px;
+        background: #ffffff;
+    }
+
+    .window__button {
+        position: absolute;
+        border: none;
+        border-radius: 10px;
+        outline: none;
+        padding: 18px 56px;
+        background-color: #1A226B;
+        color: #ffffff;
+        left: 218px;
+        bottom: 26px;
+    }
+
+    .window__field-mail {
+        position: absolute;
+        top: 93px;
+        left: 53px;
+        font-style: normal;
+        font-weight: bold;
+        font-size: 16px;
+    }
+
+    .window__field-password {
+        position: absolute;
+        top: 174px;
+        left: 53px;
+        font-style: normal;
+        font-weight: bold;
+        font-size: 16px;
+    }
+
+    .window__label {
+        font-size: 28px;
+    }
+}

@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>авторизация</title>
+    <link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<body class="theme">
+    <div class="window">
+        <form method="post" action="/submit" target="_blank" class="window__form">
+            <h1 class="window__title">Вход</h1>
+            <div class="window__field-mail">Email</div>
+            <div class="window__field">
+                <input id="e-mail" required name="window__input" type="email" placeholder=" Введите почту" class="window__input">
+                <label for="e-mail" class="window__label"></label>
+            </div>
+            <div class="window__field-password">Пароль</div>
+            <div class="window__field">
+                <input id="password" required name="window__password" type="password" placeholder=" Введите пароль" class="window__input window__password">
+                <label for="password" class="window__label"></label>
+            </div>
+            <div class="window__block">
+                <input id="checkbox" name="window__checkbox" type="checkbox" class="window__checkbox">
+                <div class="window__button-checkbox"></div>
+                <label for="checkbox" class="window__checkbox-label">Я согласен получать обновления на почту</label>
+            </div>
+            <div class="window__button-fix">
+                <button class="window__button">Войти</button>
+            </div>
+        </form>
+    </div>
+
+</body>
+</html>
