@@ -1,0 +1,137 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;700&display=swap');
+
+body {
+    margin: 0;
+    padding: 0;
+    background: #161516;
+    height: 100%;
+    z-index: 1;
+}
+
+html {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+}
+
+.basket {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: normal;
+    font-style: normal;
+    color: white;
+    height: 100%;
+    max-width: 1440px;
+    display: flex;
+    flex-direction: column;
+    padding: 40px 290px 35px;
+    position: relative;
+
+}
+
+.tittle {
+    font-weight: bold;
+    font-size: 31px;
+    line-height: 38px;
+    margin: 13px auto 0;
+}
+
+.maim {
+    margin: 3px auto;
+}
+
+.product {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 35px;
+    align-items: center;
+    position: relative;
+}
+
+.product__photo-1 {
+    width: 122px;
+    height: 122px;
+    background-size: cover;
+    margin-right: 80px;
+}
+
+.product__photo-2 {
+    width: 122px;
+    height: 122px;
+    background-size: cover;
+    margin-right: 80px;
+}
+
+.product__photo-3 {
+    width: 122px;
+    height: 122px;
+    background-size: cover;
+    margin-right: 80px;
+}
+
+.product__name {
+    font-weight: 500;
+    font-size: 17px;
+    line-height: 21px;
+    width: 265px;
+}
+
+.product__sum {
+    color: #D58C51;
+    font-weight: normal;
+    font-size: 18px;
+    line-height: 22px;
+    margin-left: 50px;
+    margin-right: 1px;
+    width: 70px;
+}
+
+.product__button {
+    width: 30px;
+    height: 30px;
+    border-radius: 50px;
+    background-color: #161516;
+    color: #D58C51;
+    border-color: #D58C51;
+    margin-left: 21px;
+}
+
+.price {
+    display: flex;
+    justify-content: space-around;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    align-items: center;
+}
+
+.price__tittle {
+    font-weight: normal;
+    font-size: 21px;
+    line-height: 26px;
+}
+
+.price__sum {
+    font-weight: normal;
+    font-size: 18px;
+    line-height: 22px;
+    color: #D58C51;
+    margin-right: 20px;
+    margin-left: 5px;
+}
+
+.price__button {
+    width: 200px;
+    height: 42px;
+    background: #D58C51;
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 17px;
+    color: #161516;
+}
+
+.line {
+    width: 100%;
+    height: 1px;
+    background-color: #D58C51;
+    z-index: 2;
+    margin-top: 10vh;
+}
