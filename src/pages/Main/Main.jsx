@@ -15,7 +15,7 @@ function Main() {
             <header className={'header'}>
                 <h1 className={['header__tittle']}>наша продукция</h1>
                 <div className={['header__info']}>
-                    <div className={['header__info-sum']}>{products.length} товара на сумму {getSum(products)} ₽</div>
+                    <div className={['header__info-sum']}>{products.length} товара <br/>на сумму {getSum(products)} ₽</div>
                     <div className={['header__info-icon']}/>
                     <Link to='/Basket' className={['header__info-link']}><img src={logo} alt='logo'/></Link>
                 </div>

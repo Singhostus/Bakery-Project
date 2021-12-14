@@ -41,7 +41,10 @@
     font-size: 17px;
     line-height: 21px;
     color: white;
+    align-self: center;
+    margin-right: 10px;
 }
+
 
 img {
     width: 50px;

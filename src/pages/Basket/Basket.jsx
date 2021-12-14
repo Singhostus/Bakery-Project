@@ -1,7 +1,7 @@
-import {Link, Route, Routes} from "react-router-dom";
-import {Main} from "../Main/Main";
+import {Link} from "react-router-dom";
 import './Basket.modules.css';
 import {useDispatch, useSelector} from "react-redux";
+import Back from "../../assets/image/Back.png";
 
 function getSum(products) {
     return products.reduce((sum, current) => sum + current.price, 0)
@@ -11,21 +11,23 @@ function Basket() {
     const dispatch = useDispatch()
     return (
         <div className="basket">
-            <div className="tittle">Корзина с выбранными товарами</div>
-            <main className="maim">
-                {products.map((product, index)=><div className="product">
-                    <img src= {product.img} className="product__photo-1"></img>
-                    <h2 className="product__name">{product.title}</h2>
-                    <h2 className="product__sum">{product.price} ₽</h2>
-                    <button onClick={() => dispatch({ type: 'products/removeProduct', payload: { index } })} className="product__button">X</button>
+            <div className="basket-tittle">Корзина с выбранными товарами</div>
+            <main className="basket-main">
+                {products.map((product, index)=>
+                    <div className="basket-product">
+                        <img alt='logo' src= {product.img} className="basket-product__photo"/>
+                        <h2 className="basket-product__name">{product.title}</h2>
+                        <h2 className="basket-product__sum">{product.price} ₽</h2>
+                        <button onClick={() => dispatch({ type: 'products/removeProduct',
+                        payload: { index } })} className="basket-product__button">X</button>
                     </div>)}
-
             </main>
-            <div className="line"></div>
-            <div className="price">
-                <div className="price__tittle">Заказ на сумму:</div>
-                <div className="price__sum">{getSum(products)} ₽</div>
-                <button className="price__button">Оформить заказ</button>
+            <div className="line"/>
+            <div className="basket-price">
+                <div className="basket-price__tittle">Заказ на сумму:</div>
+                <div className="basket-price__sum">{getSum(products)} ₽</div>
+                <button className="basket-price__button">Оформить заказ</button>
+                <Link to='/' className={['basket-logo']}><img src={Back} alt='Back'/></Link>
             </div>
         </div>
 
