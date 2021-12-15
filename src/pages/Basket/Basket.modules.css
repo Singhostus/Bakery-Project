@@ -13,8 +13,14 @@ html {
     padding: 0;
     height: 100%;
 }
+
 img {
     margin: 0;
+}
+
+a {
+    text-decoration: none;
+    color: white;
 }
 
 .basket {
@@ -36,6 +42,8 @@ img {
     font-size: 31px;
     line-height: 38px;
     margin: 13px auto 0;
+    color: white;
+    text-decoration: none;
 }
 
 .basket-main {

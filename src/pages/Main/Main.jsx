@@ -20,7 +20,7 @@ function Main() {
                     <Link to='/Basket' className={['header__info-link']}><img src={logo} alt='logo'/></Link>
                 </div>
             </header>
-            <main className={'products'}>
+            <main>
                 <div className={['product-list']}>
                     {content.map(item => (
                     <Card

@@ -11,7 +11,7 @@ function Basket() {
     const dispatch = useDispatch()
     return (
         <div className="basket">
-            <div className="basket-tittle">Корзина с выбранными товарами</div>
+            <div className="basket-tittle"><Link to='/' >Корзина с выбранными товарами</Link></div>
             <main className="basket-main">
                 {products.map((product, index)=>
                     <div className="basket-product">
@@ -27,7 +27,6 @@ function Basket() {
                 <div className="basket-price__tittle">Заказ на сумму:</div>
                 <div className="basket-price__sum">{getSum(products)} ₽</div>
                 <button className="basket-price__button">Оформить заказ</button>
-                <Link to='/' className={['basket-logo']}><img src={Back} alt='Back'/></Link>
             </div>
         </div>
 
